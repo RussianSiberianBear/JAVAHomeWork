@@ -73,7 +73,7 @@ public class Main {
         System.out.println(Arrays.toString(inputArray4));
         System.out.println(outputArray4);
 
-//5
+//5//
         int[] inputArray5 = {10000, -2000, 5000, -4000, 20000};
         int outputArray5 = 0;
 
