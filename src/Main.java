@@ -61,27 +61,29 @@ public class Main {
 
 //4
 
-        // Я понял условия задачи так, что outputArray4 просто флаг с типом boolean
-        // в качестве массива это вроде и не надо несмотря на имя
         int[] inputArray4 = {6000, -4500, 7000, -5000, 10000};
-        boolean outputArray4 = true;
+        boolean [] outputArray4 = {true};
 
         for (int balance : inputArray4) {
-            outputArray4 = (outputArray4 && (balance > 0));
-            if (!outputArray4) break;
+            outputArray4[0] = (outputArray4[0] && (balance > 0));
+            if (!outputArray4[0]) {
+                break;
+            }
         }
         System.out.println(Arrays.toString(inputArray4));
-        System.out.println(outputArray4);
+        System.out.println(Arrays.toString(outputArray4));
 
 //5/
         int[] inputArray5 = {10000, -2000, 5000, -4000, 20000};
-        int outputArray5 = 0;
+        int [] outputArray5 = {0};
 
         for (int balance : inputArray5) {
-            if (balance > 0) outputArray5++;
+            if (balance > 0) {
+                outputArray5[0]++;
+            }
         }
         System.out.println(Arrays.toString(inputArray5));
-        System.out.println(outputArray5);
+        System.out.println(Arrays.toString(outputArray5));
     }
 
 
