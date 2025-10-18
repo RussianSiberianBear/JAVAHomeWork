@@ -33,7 +33,7 @@ public class Product {
         return "Товар[артикул=" + this.id + ", название=" + this.name + ", цена=" + this.price + ", категория=" + this.category + "]";
     }
 
-    //@Override
+    @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
 
