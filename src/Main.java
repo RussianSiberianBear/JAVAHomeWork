@@ -138,7 +138,7 @@ public class Main {
         Employee findEmplById = book.getEmployeeById(findId);
         if (findEmplById != null) {
             System.out.println("Такой сотрудник найден.");
-            System.out.println(findEmplById.toString());
+            System.out.println(findEmplById);
         } else {
             System.out.println("Сотрудника с таким ID нет!");
         }
